@@ -18,7 +18,7 @@ all_permutations_maq = []
 for i in range(0, quant_maquinas):
     all_permutations_maq.append([])
 
-# Utiliza-se a biblioteca itertools para realizar a permutação das operações. Após realizada, é atualizado o valor dos
+# nesse trecho é feito a permutação das operações. Após realizada, é atualizado o valor dos
 # tempos inicias da primeira maquina, de tal forma que as operações são executadas sucessivamente, já que não tem precedencia.
 # Após, as permutações são armazenadas na variavel criada previamente (all_permutations_maq)
 for jobs_maq1 in list(itertools.permutations(jobs_data2[0])):
